@@ -1,0 +1,140 @@
+<!--
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chris Davis Portfolio</title>
+</head>
+<!-- Nav bar will have my name on the left hand side and links will be on the righthand side.-->
+<body>
+    <nav>
+        <div class="nav-header">
+            <h1>Chris Davis</h1>
+        </div>
+            <ul class="nav-links">
+                <a href="#bio">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact-me">Contact Me</a>
+            </ul>
+    </nav>
+    <!-- The header will have an image inlayed with my welcome text-->
+    <header>
+        <section>
+            <img src="assets/images/cover.jpg" alt="">
+            <h2>Welcome to my Portfolio!</h2>
+        </section>
+    </header>
+    <!-- I will seperate the context with grid between left and right, then make it wrap.
+    maybe stack for smaller screens-->
+    <main>
+        <div class="bio" id="bio">
+            <h1 id="bio-left">
+                About Me
+            </h1>
+            <img src="assets/images/chris1.jpg" alt="">
+            <section id="bio-right">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi harum veniam molestias? Ad dolorum corrupti cum, rem aliquam nulla necessitatibus eius ab eum exercitationem magnam ipsam delectus quos. Cumque?
+                    Eveniet iste, dolores consectetur voluptatibus pariatur ab recusandae magni provident error tenetur quidem quas quae facere quam aspernatur, aut sed dolor dolorum, ducimus praesentium. Neque sint odit laboriosam culpa adipisci!
+                    Blanditiis esse aliquam adipisci rerum, non eaque! Voluptates praesentium, dicta ut inventore exercitationem, sed excepturi veniam, deleniti at eum eius sapiente rem reiciendis. Assumenda, dicta. Deleniti esse ducimus debitis. Asperiores.
+                    Reprehenderit nisi culpa fuga aspernatur, mollitia veritatis debitis blanditiis, esse ex repellat sapiente dicta vero expedita! Voluptates quasi illo officiis debitis alias, hic ab iusto. Rerum veniam eligendi quaerat repudiandae.
+                    Nostrum, deleniti hic dolorum pariatur asperiores sequi nesciunt itaque aliquid consequatur debitis eos unde alias natus reprehenderit deserunt saepe rerum maiores? Nisi voluptatibus quasi quo velit, tempore tenetur dolores. Neque.
+                    Placeat dicta molestias dolor quidem maiores commodi reprehenderit temporibus officia expedita iure vero fugiat voluptate sapiente molestiae earum possimus blanditiis ea, corporis laudantium mollitia eos ad corrupti! Soluta, rem velit?
+                    Eveniet praesentium sequi reiciendis provident nihil veritatis quam nemo modi fugiat ipsam perferendis voluptatibus qui aliquid, aliquam molestias sed nisi laudantium temporibus ut a sapiente doloribus! Laboriosam non ea accusamus.
+                    Cum quibusdam dicta provident enim voluptatum accusamus consectetur rem corporis, aperiam culpa? Excepturi architecto quo repellat, ab esse blanditiis? Doloremque incidunt perferendis aperiam labore sunt eos ad accusamus soluta nesciunt!
+                    Labore, nobis velit provident ad, animi quos placeat debitis quo dolorum quod eaque blanditiis sed suscipit quis tenetur recusandae! Recusandae illo in at, ipsam ea sapiente enim beatae voluptatem natus?
+                    Modi voluptatum, veritatis nemo placeat laboriosam, amet nam recusandae repudiandae obcaecati fugiat earum voluptate id labore odio quod itaque numquam quisquam deserunt velit cum libero ratione maxime excepturi rerum? Temporibus?
+                    Blanditiis at doloribus eaque vitae asperiores illo illum sit rem consectetur magnam nihil, ipsum fugit non! Nisi nulla saepe atque ab aspernatur nam sed ratione officiis provident, pariatur vero exercitationem?
+                    Laborum eaque cumque deserunt corporis reprehenderit quam placeat dolorum! Esse blanditiis qui, explicabo quia aliquid, vitae porro expedita similique iste natus, architecto fugiat nemo ea quae neque aperiam corrupti quis!
+                    Sit sequi hic inventore repellat ipsum, alias maxime commodi, facere eveniet error earum molestiae voluptas quaerat! Odit illum, itaque cumque enim commodi ea quisquam sequi esse at. Eius, accusamus sapiente.
+                    Dolorem, et facilis dignissimos aspernatur, minus hic facere porro delectus expedita, dolor recusandae. Eos reiciendis, odio repudiandae quod aliquid explicabo magni quibusdam eaque cupiditate perspiciatis facilis? Omnis, deleniti? Sapiente, magnam?
+                    Suscipit deserunt distinctio amet dolore inventore. Ducimus culpa reiciendis placeat illum. Adipisci placeat fuga provident culpa vero, dolorum vitae aut, nihil dignissimos, fugit quasi corporis magnam repellendus asperiores sed laboriosam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur tempore ipsum nulla dolor, officia doloremque possimus quia sed fuga culpa dolorem perspiciatis reiciendis quaerat autem incidunt aliquid unde! Reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, numquam tenetur totam est voluptatibus qui temporibus quae molestias esse. Itaque magnam accusamus dolores corporis iste dolore, culpa incidunt consequatur in.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi harum veniam molestias? Ad dolorum corrupti cum, rem aliquam nulla necessitatibus eius ab eum exercitationem magnam ipsam delectus quos. Cumque?
+                    Eveniet iste, dolores consectetur voluptatibus pariatur ab recusandae magni provident error tenetur quidem quas quae facere quam aspernatur, aut sed dolor dolorum, ducimus praesentium. Neque sint odit laboriosam culpa adipisci!
+                    Blanditiis esse aliquam adipisci rerum, non eaque! Voluptates praesentium, dicta ut inventore exercitationem, sed excepturi veniam, deleniti at eum eius sapiente rem reiciendis. Assumenda, dicta. Deleniti esse ducimus debitis. Asperiores.
+                    Reprehenderit nisi culpa fuga aspernatur, mollitia veritatis debitis blanditiis, esse ex repellat sapiente dicta vero expedita! Voluptates quasi illo officiis debitis alias, hic ab iusto. Rerum veniam eligendi quaerat repudiandae.
+                    Nostrum, deleniti hic dolorum pariatur asperiores sequi nesciunt itaque aliquid consequatur debitis eos unde alias natus reprehenderit deserunt saepe rerum maiores? Nisi voluptatibus quasi quo velit, tempore tenetur dolores. Neque.
+                    Placeat dicta molestias dolor quidem maiores commodi reprehenderit temporibus officia expedita iure vero fugiat voluptate sapiente molestiae earum possimus blanditiis ea, corporis laudantium mollitia eos ad corrupti! Soluta, rem velit?
+                    Eveniet praesentium sequi reiciendis provident nihil veritatis quam nemo modi fugiat ipsam perferendis voluptatibus qui aliquid, aliquam molestias sed nisi laudantium temporibus ut a sapiente doloribus! Laboriosam non ea accusamus.
+                    Cum quibusdam dicta provident enim voluptatum accusamus consectetur rem corporis, aperiam culpa? Excepturi architecto quo repellat, ab esse blanditiis? Doloremque incidunt perferendis aperiam labore sunt eos ad accusamus soluta nesciunt!
+                    Labore, nobis velit provident ad, animi quos placeat debitis quo dolorum quod eaque blanditiis sed suscipit quis tenetur recusandae! Recusandae illo in at, ipsam ea sapiente enim beatae voluptatem natus?
+                    Modi voluptatum, veritatis nemo placeat laboriosam, amet nam recusandae repudiandae obcaecati fugiat earum voluptate id labore odio quod itaque numquam quisquam deserunt velit cum libero ratione maxime excepturi rerum? Temporibus?
+                    Blanditiis at doloribus eaque vitae asperiores illo illum sit rem consectetur magnam nihil, ipsum fugit non! Nisi nulla saepe atque ab aspernatur nam sed ratione officiis provident, pariatur vero exercitationem?
+                    Laborum eaque cumque deserunt corporis reprehenderit quam placeat dolorum! Esse blanditiis qui, explicabo quia aliquid, vitae porro expedita similique iste natus, architecto fugiat nemo ea quae neque aperiam corrupti quis!
+                    Sit sequi hic inventore repellat ipsum, alias maxime commodi, facere eveniet error earum molestiae voluptas quaerat! Odit illum, itaque cumque enim commodi ea quisquam sequi esse at. Eius, accusamus sapiente.
+                    Dolorem, et facilis dignissimos aspernatur, minus hic facere porro delectus expedita, dolor recusandae. Eos reiciendis, odio repudiandae quod aliquid explicabo magni quibusdam eaque cupiditate perspiciatis facilis? Omnis, deleniti? Sapiente, magnam?
+                    Suscipit deserunt distinctio amet dolore inventore. Ducimus culpa reiciendis placeat illum. Adipisci placeat fuga provident culpa vero, dolorum vitae aut, nihil dignissimos, fugit quasi corporis magnam repellendus asperiores sed laboriosam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur tempore ipsum nulla dolor, officia doloremque possimus quia sed fuga culpa dolorem perspiciatis reiciendis quaerat autem incidunt aliquid unde! Reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, numquam tenetur totam est voluptatibus qui temporibus quae molestias esse. Itaque magnam accusamus dolores corporis iste dolore, culpa incidunt consequatur in.
+                </p>
+            </section>
+        </div>
+<!-- I chose button tags to make these interactable-->
+        <div class="work" id="work">
+            <section id="work-left">
+                <h1>
+                    Work
+                </h1>
+            </section>
+            <section id="work-right">
+                <button id="">
+                    <img src="assets/images/cool-cat.jpg" alt="">
+                    <p></p>
+                </button>
+                <button id="">
+                    <img src="assets/images/cool-french-bulldog.jpg" alt="">
+                    <p></p>
+                </button>
+                <button id="">
+                    <img src="assets/images/storm.jpg" alt="">
+                    <p></p>
+                </button>
+                <button id="">
+                    <img src="assets/images/sea-turtle.jpg" alt="">
+                    <p></p>
+                </button>
+                <button id="">
+                    <img src="assets/images/baby-dragon.jpg" alt="">
+                    <p></p>
+                </button>
+            </section>
+        </div>
+
+        <div class="contact-me" id="contact-me">
+            <section id="contact-me-left">
+                <h1>
+                    Contact Me
+                </h1>
+            </section>
+            <section class="contact-me-right">
+                <a href="https://github.com/chriscodinghub" target="_blank">GitHub</a>
+                <a href="mailto:davischris25139@yaoo.com">E-mail</a>
+            </section>
+        </div>
+
+    </main>
+
+
+
+
+    
+</body>
+</html>
