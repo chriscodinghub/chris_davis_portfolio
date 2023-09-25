@@ -13,3 +13,109 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 */
+
+:root {
+    --color: red;
+    --background-color: black;
+    --border-color: aqua;
+
+}
+* {
+font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--color);
+    display:block;
+    position: relative;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    background-color: var(--background-color);
+    padding: 1rem;
+    border: 10px solid;
+    border-radius: 10px;
+    border-color: var(--border-color);
+    justify-content:space-between;
+    margin-bottom: 1rem;
+}
+nav li {
+    display:inline;
+    padding: 10px;
+    font-size: 20px;
+}
+header{
+    text-align: center;
+    text-decoration:underline;
+    font-size: larger
+}
+/*this defines my divisions into grids to get side by side title and content */
+.bio,
+.work,
+.contact-me{
+    display: grid;
+    border-bottom:2px solid var(--border-color);
+    padding: 10px;
+    grid-template-columns: 0.5fr 1.5fr;
+}
+
+.bio-left,
+.work-left,
+.contact-me-left{
+    display: block;
+    border-right:2px solid var(--border-color);
+    text-align:center;
+    text-decoration: underline;
+}
+.bio-right img{
+    display: flex;
+    flex: 1 1 100px;
+    max-width: 200px;
+}
+
+.bio-right-details{
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 5%;
+}
+/*this allows the box .work-right to allow flex within itself while its being affected
+by its parent to be in grid */
+.work-right{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+/* this defines my images to flex and wrap into columns as well as max sizing 3 per screen. */
+.work-right img{
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 33vh;
+    justify-content: space-between;
+
+}
+/* this shows where the button is defined as well as masking that it is a button*/
+button{
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+    margin: 20px;
+}
+
+button p{
+    color: var(--color);
+    text-align:center;
+}
+/* This will cause buttons to enlarge and display a small shadow when hovering over */
+button:hover{
+    box-shadow:10px 10px blue;
+    scale: 1.1;
+}
+
+.contact-me-right{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
