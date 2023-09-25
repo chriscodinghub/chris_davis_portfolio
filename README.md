@@ -23,6 +23,7 @@ from scratch! I definitely spent plenty of time rubbing my forehead trying to fi
     <li>My Work section has functioning buttons that will redirrect you to a new page being one of my other projects</li>
     <li>My Work buttons also will enlarge and have a box-shadow display while hovering</li>
     <li>Contact Me section has functioning links that will help you get in touch with me!, the phone number is fake.</li>
+    <li>The App will reformate to column style once the screen size is less than or equal to 768px</li>
 </ul>
 
 ## Future improvements/updates
