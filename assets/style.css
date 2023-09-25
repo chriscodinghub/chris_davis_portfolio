@@ -72,7 +72,8 @@ header{
 .bio-right img{
     display: flex;
     flex: 1 1 100px;
-    max-width: 200px;
+    max-width: 350px;
+    margin-left: 25%;
 }
 
 .bio-right-details{
@@ -118,4 +119,51 @@ button:hover{
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+/* this section defines how the page will be displayed less then or equal to 768px*/
+@media screen and (max-width: 768px) {
+    nav {
+        display:block;
+        flex-wrap:wrap;
+        text-align: center;
+        max-width: 100vh;
+    }
+    .nav-links{
+        display: grid;
+        text-align: center;
+        margin-left: -40px;  
+    }
+    .nav-header h1{
+        text-align: center;
+        
+    }
+    .bio,
+    .work,
+    .contact-me{
+    display: block;
+    border-bottom:2px solid var(--border-color);
+    padding: 10px;
+    }
+    .bio-left,
+    .work-left,
+    .contact-me-left{
+    display: block;
+    border-bottom:2px solid var(--border-color);
+    border-right: var(--background-color);
+    text-align:center;
+    text-decoration: underline;
+    }
+    .bio-right img{
+        display: block;
+        margin: 0%;
+    }
+    .contact-me-right{
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .contact-me-right a{
+        display: grid;
+    }
 }

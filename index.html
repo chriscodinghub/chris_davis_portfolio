@@ -23,7 +23,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 </head>
 <!-- Nav bar will have my name on the left hand side and links will be on the righthand side.-->
 <body>
-    <nav class="sticky-nav">
+    <nav>
         <div class="nav-header">
             <h1>Chris Davis</h1>
         </div>
@@ -33,7 +33,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
                 <li><a href="#contact-me">Contact Me</a> </li>
             </ul>
     </nav>
-    <!-- The header will have an image inlayed with my welcome text-->
+    <!-- The header will have my welcome text-->
     <header>
         <section>
             <h1>Welcome to my Portfolio!</h1>
@@ -52,14 +52,23 @@ THEN I am presented with a responsive layout that adapts to my viewport
             <div class="bio-right">
                 <section class="bio-right-details">
                     <p>
-                    Consequatur pariatur tempore ipsum nulla dolor, officia doloremque possimus quia sed fuga culpa dolorem perspiciatis reiciendis quaerat autem incidunt aliquid unde! Reiciendis!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, numquam tenetur totam est voluptatibus qui temporibus quae molestias esse. Itaque magnam accusamus dolores corporis iste dolore, culpa incidunt consequatur in.
+                    Hi there! My name is Chris Davis! I am very excited to showcase what I have learned in two weeks of coding school!
+                    I am very eager to see where this adventure takes me. 
+                    <br>
+                    <brA few things about myself are that I am happily married to my beautiful wife katelyn,
+                    I enjoy spending my freetime playing various video games and learning more about HTML, CSS and JavaScript!
+                    <br>
+                    <br>
+                    Now if you look below you will find many wonderful projects that I have been working on diligently over my fullstack bootcamp!
+                    <br>
+                    <br>
+                    Also you will find my beautiful bulldog Pepper sticking her tongue out at me 😜
                     </p>
-                    <img src="assets/images/chris1.jpg" alt="">
+                    <img src="assets/images/chris1.jpg" alt="Chris and dog Pepper sitting in a car.">
                 </section>
             </div>
         </div>
-<!-- I chose figure tags to make these interactable-->
+<!-- I chose button tags to make these interactable-->
         <div class="work" id="work">
             <section class="work-left">
                 <h1>
@@ -68,23 +77,24 @@ THEN I am presented with a responsive layout that adapts to my viewport
             </section>
             <section class="work-right">
                 <button onclick="location.href='https://chriscodinghub.github.io/pseudo-elements/';" id="dragon-button">
-                    <img src="assets/images/baby-dragon.jpg" alt="">
+                    <img src="assets/images/baby-dragon.jpg" alt="A baby dragon.">
                     <p>Pseudo Elements Display</p>
                 </button>
-                <button onclick="location.href='https://chriscodinghub.github.io/Prework-study-guide/';">
-                    <img src="assets/images/cool-cat.jpg" alt="">
+                <button onclick="location.href='https://chriscodinghub.github.io/Prework-study-guide/';" id="cat-button">
+                    <img src="assets/images/cool-cat.jpg" alt="A chubby cat wearing sun glasses.">
                     <p>Prework Study Guide</p>
                 </button>
                 <button onclick="location.href='https://chriscodinghub.github.io/Horiseon-debug/';" id="french-button">
-                    <img  src="assets/images/cool-french-bulldog.jpg" alt="">
+                    <img  src="assets/images/cool-french-bulldog.jpg" alt="A french bulldog wearing sunglasses.">
                     <p>Horiseon Debug</p>
                 </button >
-                <button onclick="location.href='#';">
-                    <img  src="assets/images/sea-turtle.jpg" alt="">
+                <!--These buttons have nothing programed into them yet, but they are ready-->
+                <button onclick="location.href='#';" id="turtle-button">
+                    <img  src="assets/images/sea-turtle.jpg" alt="A sea turtle swimming in the ocean.">
                     <p>Comming Soon!</p>
                 </button>
-                <button onclick="location.href='#';">
-                    <img src="assets/images/storm.jpg" alt="">
+                <button onclick="location.href='#';" id="storm-button">
+                    <img src="assets/images/storm.jpg" alt="A storm cloud striking the earth with lightning.">
                     <p>Coming Soon!</p>
                 </button>
             </section>
@@ -96,6 +106,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
                     Contact Me
                 </h1>
             </section>
+            <!--My contact information "using a fake phone number obviously" -->
             <section class="contact-me-right">
                 <a href="https://github.com/chriscodinghub" target="_blank">Chris Davis Github</a>
                 <a href="mailto:davischris25139@yaoo.com">Davischris25139@yahoo.com</a>
