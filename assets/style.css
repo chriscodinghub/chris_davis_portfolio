@@ -18,6 +18,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
     --color: red;
     --background-color: black;
     --border-color: aqua;
+    --nav-shadows:5px 5px 5px 5px orange;
 
 }
 * {
@@ -46,6 +47,11 @@ nav li {
     padding: 10px;
     font-size: 20px;
 }
+/*This lets you see what your mouse is hovering over */
+nav li:hover{
+    box-shadow: var(--nav-shadows);
+}
+
 header{
     text-align: center;
     text-decoration:underline;
@@ -115,10 +121,21 @@ button:hover{
     scale: 1.1;
 }
 
-.contact-me-right{
+/*.contact-me-right{
     display: flex;
     justify-content: center;
     gap: 20px;
+}*/
+.contact-me-links{
+    display:flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.contact-me-links li:hover{
+    box-shadow: var(--nav-shadows);
 }
 /* this section defines how the page will be displayed less then or equal to 768px*/
 @media screen and (max-width: 768px) {
@@ -157,13 +174,13 @@ button:hover{
         display: block;
         margin: 0%;
     }
-    .contact-me-right{
+    .contact-me-links{
         display: block;
         flex-wrap: wrap;
         text-align: center;
     }
 
-    .contact-me-right a{
+    .contact-me-links a{
         display: grid;
     }
 }
